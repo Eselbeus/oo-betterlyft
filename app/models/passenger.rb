@@ -23,4 +23,20 @@ class Passenger
     end
   end
 
+  def total_distance
+    rides.reduce(0) do |acc, ride|
+      acc + ride.distance
+    end
+  end
+
+  def self.premium_members
+    self.all.select do |pass|
+       if pass.total_distance > 100
+         true
+       else
+         false
+       end
+    end
+  end
+
 end

@@ -1,3 +1,4 @@
+require 'pry'
 class Driver
   @@all = []
   attr_accessor :name
@@ -26,6 +27,18 @@ class Driver
   def passenger_names
     passengers.map do |passenger|
       passenger.name
+    end
+  end
+
+  def driver_distance
+    rides.reduce(0) do |acc, ride|
+      acc + ride.distance
+    end
+  end
+
+  def self.mileage_cap(miles)
+    Driver.all.select do |driv|
+      driv.driver_distance > miles
     end
   end
 

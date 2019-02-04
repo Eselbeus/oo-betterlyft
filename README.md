@@ -22,12 +22,12 @@ We'd like for you build out the following methods for each class. As you work, w
   - Returns an array of Ride instances that this person has been on -->
 <!-- - `Passenger#drivers`
   - Returns an array of Driver instances that this person has rode with -->
-- `Passenger#total_distance`
-  - Returns the floating number that represents the total distance the passenger has travelled using the service
-- `Passenger.all`
-  - Returns an array of all Passengers
-- `Passenger.premium_members`
-  - Returns an array of all Passengers who have travelled over 100 miles in total with the service
+<!-- - `Passenger#total_distance`
+  - Returns the floating number that represents the total distance the passenger has travelled using the service -->
+<!-- - `Passenger.all`
+  - Returns an array of all Passengers -->
+<!-- - `Passenger.premium_members`
+  - Returns an array of all Passengers who have travelled over 100 miles in total with the service -->
 
 #### Ride
 <!-- A Ride should be initialized with a driver (as a Driver object), a passenger (as a Passenger object), and a distance (as a float i.e. `3.2`). The distance refers to miles.
@@ -48,7 +48,7 @@ We'd like for you build out the following methods for each class. As you work, w
   - Returns an array of all Passengers' names a driver has driven. The names should be **unique** (no repeats). -->
 <!-- - `Driver#rides`
   - Returns an array of all Rides a driver has made -->
-- `Driver.all`
+<!-- - `Driver.all`
   - Returns an array of all Drivers
-- `Driver.mileage_cap(distance)`
+- `Driver.mileage_cap(distance)` -->
   - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
